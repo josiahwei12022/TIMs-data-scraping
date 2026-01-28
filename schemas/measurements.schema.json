@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "measurements.schema.json",
+  "type": "object",
+  "required": [
+    "_meta",
+    "data"
+  ],
+  "properties": {
+    "_meta": {
+      "type": "object"
+    },
+    "data": {
+      "type": "object"
+    }
+  }
+}
