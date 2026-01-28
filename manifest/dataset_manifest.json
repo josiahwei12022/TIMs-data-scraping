@@ -1,0 +1,69 @@
+{
+  "dataset_id": "TIM_INTEL",
+  "dataset_version": "v3_skeleton",
+  "built_at": "2026-01-20T09:50:00Z",
+  "timezone": "UTC",
+  "notes": "Skeleton only. Time dimension added across core records.",
+  "files": [
+    {
+      "path": "core/raw_scrapes/index.jsonl",
+      "record_type": "raw_scrape",
+      "schema_ref": "schemas/raw_scrapes.schema.json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "path": "core/sources.jsonl",
+      "record_type": "source",
+      "schema_ref": "schemas/sources.schema.json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "path": "core/evidence.jsonl",
+      "record_type": "evidence",
+      "schema_ref": "schemas/evidence.schema.json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "path": "core/entities/companies.jsonl",
+      "record_type": "company",
+      "schema_ref": "schemas/companies.schema.json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "path": "core/entities/products.jsonl",
+      "record_type": "product",
+      "schema_ref": "schemas/products.schema.json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "path": "core/entities/materials.jsonl",
+      "record_type": "material",
+      "schema_ref": "schemas/materials.schema.json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "path": "core/facts/claims.jsonl",
+      "record_type": "claim",
+      "schema_ref": "schemas/claims.schema.json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "path": "core/facts/measurements.jsonl",
+      "record_type": "measurement",
+      "schema_ref": "schemas/measurements.schema.json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "path": "core/facts/risks.jsonl",
+      "record_type": "risk",
+      "schema_ref": "schemas/risks.schema.json",
+      "schema_version": "3.0.0"
+    },
+    {
+      "path": "core/facts/evidence_events.jsonl",
+      "record_type": "evidence_event",
+      "schema_ref": "schemas/evidence_events.schema.json",
+      "schema_version": "3.0.0"
+    }
+  ]
+}
