@@ -1,0 +1,32 @@
+{
+  "dictionary_id": "units",
+  "version": "3.0.0",
+  "updated_at": "2026-01-20T09:50:00Z",
+  "units": [
+    {
+      "code": "mm2K_per_W",
+      "label": "mm^2*K/W",
+      "dimension": "thermal_resistance_area"
+    },
+    {
+      "code": "W_per_mK",
+      "label": "W/mK",
+      "dimension": "thermal_conductivity"
+    },
+    {
+      "code": "um",
+      "label": "um",
+      "dimension": "length"
+    },
+    {
+      "code": "kPa",
+      "label": "kPa",
+      "dimension": "pressure"
+    },
+    {
+      "code": "cycles",
+      "label": "cycles",
+      "dimension": "count"
+    }
+  ]
+}

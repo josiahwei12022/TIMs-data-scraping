@@ -1,0 +1,28 @@
+{
+  "dictionary_id": "tim_position_taxonomy",
+  "version": "3.0.0",
+  "updated_at": "2026-01-20T09:50:00Z",
+  "positions": [
+    {
+      "code": "TIM1",
+      "label": "Die-to-lid",
+      "synonyms": [
+        "TIM 1"
+      ],
+      "package_contexts": [
+        "die_to_lid"
+      ]
+    },
+    {
+      "code": "TIM2",
+      "label": "Lid-to-heatsink",
+      "synonyms": [
+        "TIM 2"
+      ],
+      "package_contexts": [
+        "lid_to_heatsink"
+      ]
+    }
+  ],
+  "notes": "Extend per program definitions"
+}

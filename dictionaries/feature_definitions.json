@@ -1,0 +1,36 @@
+{
+  "dictionary_id": "feature_definitions",
+  "version": "3.0.0",
+  "updated_at": "2026-01-20T09:50:00Z",
+  "features": [
+    {
+      "feature_id": "FTR_r_th_at_200kpa_mm2k_w",
+      "name": "R_th at 200 kPa",
+      "description": "Area-normalized thermal resistance at 200 kPa including contact resistance.",
+      "unit": "mm2K_per_W",
+      "applies_to": [
+        "product",
+        "material"
+      ],
+      "time_window": "point",
+      "source_types": [
+        "datasheet",
+        "paper",
+        "test_report"
+      ]
+    },
+    {
+      "feature_id": "FTR_patent_lift",
+      "name": "Patent share lift",
+      "description": "Lift of share-of-voice for patents (recent window vs baseline).",
+      "unit": "ratio",
+      "applies_to": [
+        "tech"
+      ],
+      "time_window": "recent_vs_baseline",
+      "source_types": [
+        "patent"
+      ]
+    }
+  ]
+}

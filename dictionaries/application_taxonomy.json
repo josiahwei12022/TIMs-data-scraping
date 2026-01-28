@@ -1,0 +1,28 @@
+{
+  "dictionary_id": "application_taxonomy",
+  "version": "3.0.0",
+  "updated_at": "2026-01-20T09:50:00Z",
+  "segments": [
+    {
+      "code": "ai_accelerator",
+      "label": "AI accelerator",
+      "synonyms": [
+        "GPU",
+        "AI ASIC"
+      ]
+    },
+    {
+      "code": "server_cpu",
+      "label": "Server CPU",
+      "synonyms": []
+    },
+    {
+      "code": "power_module",
+      "label": "Power module",
+      "synonyms": [
+        "IGBT",
+        "SiC module"
+      ]
+    }
+  ]
+}

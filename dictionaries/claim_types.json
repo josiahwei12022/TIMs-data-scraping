@@ -1,0 +1,37 @@
+{
+  "dictionary_id": "claim_types",
+  "version": "3.0.0",
+  "updated_at": "2026-01-20T09:50:00Z",
+  "claim_types": [
+    {
+      "code": "uses_material",
+      "subject": [
+        "company",
+        "product"
+      ],
+      "object": [
+        "material",
+        "material_class"
+      ]
+    },
+    {
+      "code": "offers_product",
+      "subject": [
+        "company"
+      ],
+      "object": [
+        "product"
+      ]
+    },
+    {
+      "code": "specifies_property",
+      "subject": [
+        "material",
+        "product"
+      ],
+      "object": [
+        "property"
+      ]
+    }
+  ]
+}

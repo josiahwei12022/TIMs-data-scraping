@@ -1,0 +1,34 @@
+{
+  "dictionary_id": "risk_taxonomy",
+  "version": "3.0.0",
+  "updated_at": "2026-01-20T09:50:00Z",
+  "risk_types": [
+    {
+      "code": "electrical_conductivity",
+      "severity_hint": "high"
+    },
+    {
+      "code": "corrosion",
+      "severity_hint": "high"
+    },
+    {
+      "code": "pump_out",
+      "severity_hint": "medium"
+    },
+    {
+      "code": "dry_out",
+      "severity_hint": "medium"
+    }
+  ],
+  "severity_levels": [
+    "low",
+    "medium",
+    "high",
+    "critical"
+  ],
+  "mitigation_status": [
+    "mitigated",
+    "unmitigated",
+    "unknown"
+  ]
+}
