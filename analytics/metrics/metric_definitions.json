@@ -1,0 +1,43 @@
+{
+  "schema_version": "3.1.0",
+  "metrics": [
+    {
+      "metric_id": "MET_PS",
+      "name": "Potential Score",
+      "scale": {"min": 0, "max": 100},
+      "time_semantics": "Score is computed as-of a chosen as_of_date/window; inputs must specify observed_at/published_at to support auditability.",
+      "subscores": [
+        {"code": "S1", "name": "Thermal", "range": [0, 5], "default_weight": 0.25},
+        {"code": "S2", "name": "Reliability", "range": [0, 5], "default_weight": 0.25},
+        {"code": "S3", "name": "Manufacturability", "range": [0, 5], "default_weight": 0.20},
+        {"code": "S4", "name": "CostSupply", "range": [0, 5], "default_weight": 0.15},
+        {"code": "S5", "name": "IntegrationRisk", "range": [0, 5], "default_weight": 0.10},
+        {"code": "S6", "name": "EvidenceStrength", "range": [0, 5], "default_weight": 0.05}
+      ],
+      "penalties": {
+        "uncertainty": {"range": [0, 15]},
+        "risk_gate": {"range": [0, 40]}
+      },
+      "formula": "PS = 20 * SUM(w_i * S_i) - UncertaintyPenalty - RiskGatePenalty"
+    },
+    {
+      "metric_id": "MET_B",
+      "name": "Metric B",
+      "scale": {"min": 0, "max": 100},
+      "time_semantics": "Metric B is time-series driven; all inputs must be aggregated by bucket_month and compared across windows.",
+      "subscores": [
+        {"code": "B1", "name": "Research Momentum", "range": [0, 5], "default_weight": 0.20},
+        {"code": "B2", "name": "Commercial Momentum", "range": [0, 5], "default_weight": 0.30},
+        {"code": "B3", "name": "Attention Momentum", "range": [0, 5], "default_weight": 0.15},
+        {"code": "B4", "name": "Share Gain", "range": [0, 5], "default_weight": 0.15},
+        {"code": "B5", "name": "Penetration Proxy", "range": [0, 5], "default_weight": 0.10},
+        {"code": "B6", "name": "Evidence Quality", "range": [0, 5], "default_weight": 0.10}
+      ],
+      "penalties": {
+        "uncertainty": {"range": [0, 15]},
+        "integrity": {"range": [0, 20]}
+      },
+      "formula": "B = 20 * SUM(w_i * B_i) - UncertaintyPenalty - IntegrityPenalty"
+    }
+  ]
+}

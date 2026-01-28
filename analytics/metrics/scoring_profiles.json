@@ -1,0 +1,25 @@
+{
+  "schema_version": "3.1.0",
+  "profiles": [
+    {
+      "profile_id": "PROF_PS_default",
+      "metric_id": "MET_PS",
+      "context": {"application_segment": "<code>", "tim_position": "<code>", "package_context": "<code>"},
+      "time": {"as_of_date": "YYYY-MM-DD", "window": {"start": "YYYY-MM-DD", "end": "YYYY-MM-DD"}},
+      "weights_override": {},
+      "scoring_rules": {},
+      "uncertainty_penalty_rules": {"max_penalty": 15, "critical_features": []},
+      "risk_gate_rules": {"max_penalty": 40, "gates": []}
+    },
+    {
+      "profile_id": "PROF_MB_default",
+      "metric_id": "MET_B",
+      "context": {"application_segment": "<code>", "tim_position": "<code>"},
+      "time": {"recent_window_months": 12, "baseline_window_months": 60},
+      "weights_override": {"B1":0.20,"B2":0.30,"B3":0.15,"B4":0.15,"B5":0.10,"B6":0.10},
+      "scoring_rules": {},
+      "uncertainty_penalty_rules": {"max_penalty": 15, "rules": []},
+      "integrity_penalty_rules": {"max_penalty": 20, "rules": []}
+    }
+  ]
+}
